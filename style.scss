@@ -1,0 +1,128 @@
+/*変数定義*/
+$title: 25px;
+$sub_title: 20px;
+$text: 15px;
+$text_color: rgba(255, 255, 255, 0.8);
+$back: rgba(0, 0, 0, 0.8);
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    color: $text_color;
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        z-index: 2;
+        .page_title {
+            position: absolute;
+            margin: 0;
+            padding: 12px 0 0 15px;
+            font-size: $title;
+            z-index: 5;
+        }
+        .header_img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+        }
+    }
+
+    .background_img {
+        position: fixed;
+        z-index: -1;
+    }
+    .page_text {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        width: 310px;
+        text-align: center;
+        font-size: 16px;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .contents {
+        width: 100%;
+        margin: 0 0 90px 0;
+        &:first-of-type {
+            margin-top: 250px;
+        }
+
+        &_title {
+            font-size: $title;
+            padding: 0 0 20px 20px;
+        }
+
+        .about_item {
+            width: 310px;
+            margin: 0 0 30px 50%;
+            transform: translateX(-50%);
+            .about_subtitle {
+                margin: 0 0 10px 0;
+                font-size: $sub_title;
+            }
+            p {
+                margin: 0;
+                padding: 0 0 0 10px;
+                font-size: $text;
+                letter-spacing: .5px;
+            }
+        }
+
+        .service_item {
+            width: 310px;
+            margin: 0 0 30px 50%;
+            transform: translateX(-50%);
+            .service_subtitle {
+                margin: 0 0 10px 0;
+                font-size: $sub_title;
+            }
+            p {
+                margin: 0;
+                padding: 0 0 0 10px;
+                font-size: $text;
+                letter-spacing: .5px;
+            }
+        }
+
+        .price_item {
+            width: 310px;
+            margin: 0 0 20px 50%;
+            transform: translateX(-50%);
+            .price_subtitle {
+                position: relative;
+                margin: 0 0 15px 0;
+                text-align: center;
+                font-size: $sub_title;
+                &::before {
+                    width: 50px;
+                    height: 2px;
+                }
+                &::after {
+                    width: 50px;
+                    height: 2px;
+                }
+            }
+            .price_img1 {
+                width: 100%;
+            }
+            .price_img2 {
+                width: 300px;
+                margin-left: 5px;
+            }
+            .price_img3 {
+                width: 230px;
+                margin-left: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/*変数定義*/
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrap header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+}
+.wrap header .page_title {
+  position: absolute;
+  margin: 0;
+  padding: 12px 0 0 15px;
+  font-size: 25px;
+  z-index: 5;
+}
+.wrap header .header_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.wrap .background_img {
+  position: fixed;
+  z-index: -1;
+}
+.wrap .page_text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 310px;
+  text-align: center;
+  font-size: 16px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.wrap .contents {
+  width: 100%;
+  margin: 0 0 90px 0;
+}
+.wrap .contents:first-of-type {
+  margin-top: 250px;
+}
+.wrap .contents_title {
+  font-size: 25px;
+  padding: 0 0 20px 20px;
+}
+.wrap .contents .about_item {
+  width: 310px;
+  margin: 0 0 30px 50%;
+  transform: translateX(-50%);
+}
+.wrap .contents .about_item .about_subtitle {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+.wrap .contents .about_item p {
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.wrap .contents .service_item {
+  width: 310px;
+  margin: 0 0 30px 50%;
+  transform: translateX(-50%);
+}
+.wrap .contents .service_item .service_subtitle {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+.wrap .contents .service_item p {
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.wrap .contents .price_item {
+  width: 310px;
+  margin: 0 0 20px 50%;
+  transform: translateX(-50%);
+}
+.wrap .contents .price_item .price_subtitle {
+  position: relative;
+  margin: 0 0 15px 0;
+  text-align: center;
+  font-size: 20px;
+}
+.wrap .contents .price_item .price_subtitle::before {
+  width: 50px;
+  height: 2px;
+}
+.wrap .contents .price_item .price_subtitle::after {
+  width: 50px;
+  height: 2px;
+}
+.wrap .contents .price_item .price_img1 {
+  width: 100%;
+}
+.wrap .contents .price_item .price_img2 {
+  width: 300px;
+  margin-left: 5px;
+}
+.wrap .contents .price_item .price_img3 {
+  width: 230px;
+  margin-left: 40px;
+}/*# sourceMappingURL=style.css.map */
